@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Output Prediction</title>
+  </head>
+  <body>
+    <h2>Masukkan Data Pelanggan</h2>
+    <form action="/predict" method="post">
+      <input type="text" name="Age" placeholder="Age (standarisasi)" /><br />
+      <input type="text" name="Gender" placeholder="Gender (0=L, 1=P)" /><br />
+      <input type="text" name="Occupation" placeholder="Occupation (angka)" /><br />
+      <input type="text" name="Monthly Income" placeholder="Monthly Income (angka)" /><br />
+      <input type="text" name="Feedback" placeholder="Feedback (0/1)" /><br />
+      <input type="submit" value="Predict" />
+    </form>
+    <h3>{{ prediction_text }}</h3>
+  </body>
+</html>
